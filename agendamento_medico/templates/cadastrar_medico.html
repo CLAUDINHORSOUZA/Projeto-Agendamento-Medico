@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Médico</title>
+</head>
+<body>
+  <h2>Cadastrar Médico</h2>
+  <form action="/medico" method="POST">
+    <label>Nome:</label>
+    <input type="text" name="nome" style="text-transform:uppercase;" required>
+
+    <label>CRM:</label>
+    <input type="text" name="crm" required>
+
+    <label>Estado:</label>
+    <input type="text" name="estado" style="text-transform:uppercase;" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Telefone:</label>
+    <input type="text" name="telefone" required>
+
+    <button type="submit">Salvar</button>
+    <button type="reset">Cancelar</button>
+    <button type="button" onclick="location.href='/'">Voltar</button>
+    <button type="button" onclick="location.href='/procedimento'">Avançar</button>
+  </form>
+</body>
+</html>

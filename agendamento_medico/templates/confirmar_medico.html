@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Médico Salvo</title>
+</head>
+<body>
+  <h2>Médico cadastrado com sucesso!</h2>
+  <p><strong>Nome:</strong> {{ nome }}</p>
+  <p><strong>CRM:</strong> {{ crm }}</p>
+  <p><strong>Estado:</strong> {{ estado }}</p>
+  <p><strong>Email:</strong> {{ email }}</p>
+  <p><strong>Telefone:</strong> {{ telefone }}</p>
+
+  <button onclick="location.href='/medico'">Editar</button>
+  <button onclick="location.href='/procedimento'">Avançar</button>
+  <button onclick="location.href='/'">Voltar à Página Principal</button>
+</body>
+</html>
