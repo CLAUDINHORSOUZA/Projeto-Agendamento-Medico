@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Procedimento</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h2>Cadastrar Procedimento</h2>
+  <form action="/procedimento" method="POST">
+    <label>Nome do Procedimento:</label>
+    <input type="text" name="nome" style="text-transform:uppercase;" required>
+
+    <label>Duração Prevista:</label>
+    <input type="text" name="duracao" placeholder="Ex: 2 horas" required>
+
+    <label>Data:</label>
+    <input type="date" name="data" required>
+
+    <button type="submit">Salvar</button>
+    <button type="reset">Cancelar</button>
+    <button type="button" onclick="location.href='/medico'">Voltar</button>
+    <button type="button" onclick="location.href='/hospital'">Avançar</button>
+  </form>
+</body>
+</html>

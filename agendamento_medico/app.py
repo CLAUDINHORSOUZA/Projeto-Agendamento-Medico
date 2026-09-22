@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from controllers import medico_controller
+from controllers import procedimento_controller
 
 import mysql.connector
 
@@ -22,6 +23,9 @@ def index():
 def medico():
 	return medico_controller.cadastrar_medico()
 
+@app.route("/procedimento", methods=["GET", "POST"])
+def procedimento():
+    return procedimento_controller.cadastrar_procedimento()
 
 if __name__ == '__main__':
     app.run(debug=True) 
